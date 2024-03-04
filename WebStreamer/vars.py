@@ -33,7 +33,7 @@ class Var(object):
     FQDN = (
         str(environ.get("FQDN", BIND_ADDRESS))
         if not ON_HEROKU or environ.get("FQDN")
-        else APP_NAME + ".herokuapp.com"
+        else APP_NAME + "linkxsmd-da7d34432e93.herokuapp.com"
     )
     if ON_HEROKU:
         URL = f"https://{FQDN}/"
